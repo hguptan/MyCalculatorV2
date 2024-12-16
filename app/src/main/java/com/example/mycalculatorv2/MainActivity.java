@@ -1,5 +1,6 @@
 package com.example.mycalculatorv2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,9 +17,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     String result;
     String textOfTV;
-    ArrayList<String> history = new ArrayList<>();
     TextView displayCalculation;
-    TextView historyTV;
     Button button0;
     Button button1;
     Button button2;
@@ -60,9 +59,7 @@ public class MainActivity extends AppCompatActivity {
         buttonD = findViewById(R.id.buttonD);
         buttonBack = findViewById(R.id.buttonBack);
         displayCalculation = findViewById(R.id.textView);
-        historyTV = findViewById(R.id.historytv);
         buttonHistory = findViewById(R.id.historyButton);
-        historyTV.setEnabled(false);
 
         button0.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -216,11 +213,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                result = String.valueOf(CalculatorBrain.calculate(textOfTV));
-               history.add(result);
+               String s = textOfTV + " = " + result;
+                MyApp.history.add(s);
                 displayCalculation.setText(result);
                 textOfTV = "";
                 result="";
-                historyTV.setText(CalculatorBrain.historyText(history));
             }
         });
         buttonBack.setOnClickListener(new View.OnClickListener() {
@@ -249,11 +246,10 @@ public class MainActivity extends AppCompatActivity {
         buttonHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (buttonHistory.getText() == "Advanced-With History"){
-                    historyTV.setEnabled(true);
-                }
-                buttonHistory.setText("Standard-No History");
 
+                // Context =  the application memory with all access to resources
+                Intent toSecond = new Intent(MainActivity.this,SecondActivity.class);
+                startActivity(toSecond);
             }
         });
     }

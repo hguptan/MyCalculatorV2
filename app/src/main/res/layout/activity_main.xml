@@ -60,8 +60,7 @@
         <LinearLayout
             android:id="@+id/lr2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lr1" >
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
@@ -87,8 +86,7 @@
         <LinearLayout
             android:id="@+id/lr3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lr2" >
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button4"
                 android:layout_width="wrap_content"
@@ -114,8 +112,7 @@
         <LinearLayout
             android:id="@+id/lr4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/lr3" >
+            android:layout_height="wrap_content">
             <Button
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
@@ -144,7 +141,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/butEq"
-            android:layout_below="@id/ll"
             />
     </LinearLayout>
     <Button
@@ -154,13 +150,6 @@
         android:layout_below="@id/ll"
         android:text="@string/butH"
         android:textSize="20sp"/>
-    <TextView
-        android:id="@+id/historytv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:scrollHorizontally="false"
-        android:maxLines="5"
-        android:layout_below="@id/historyButton" />
+
 
 </RelativeLayout>

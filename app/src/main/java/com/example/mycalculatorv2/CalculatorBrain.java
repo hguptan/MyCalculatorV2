@@ -54,11 +54,11 @@ public class CalculatorBrain {
         return result;
     }
     // Convert ArrayList to a single String with line breaks
-    public static StringBuilder historyText (ArrayList<String> historyList){
-        StringBuilder multilineText = new StringBuilder();
-        for (String line : historyList) {
-            multilineText.append(line).append("\n");
+    public static String historyText (){
+        String toDisplay = "";
+        for (int i = 0; i < MyApp.history.size(); i++) {
+           toDisplay += MyApp.history.get(i) + "\n";
         }
-        return multilineText;
+        return toDisplay;
     }
 }

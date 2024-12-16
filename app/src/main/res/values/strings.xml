@@ -1,22 +1,23 @@
 <resources>
     <string name="app_name">MyCalculatorV2</string>
-    <string name = "butC">C</string>
-    <string name = "but0">0</string>
-    <string name = "but1">1</string>
-    <string name = "but2">2</string>
-    <string name = "but3">3</string>
-    <string name = "but4">4</string>
-    <string name = "but5">5</string>
-    <string name = "but6">6</string>
-    <string name = "but7">7</string>
-    <string name = "but8">8</string>
-    <string name = "but9">9</string>
-    <string name = "butA">+</string>
-    <string name = "butS">-</string>
-    <string name = "butM">*</string>
-    <string name = "butD">/</string>
-    <string name = "butBack">Back</string>
-    <string name = "butEq">=</string>
-    <string name = "butH">Advanced-With History</string>
-    <string name = "butNoH">Standard-No History</string>
+    <string name="butC">C</string>
+    <string name="but0">0</string>
+    <string name="but1">1</string>
+    <string name="but2">2</string>
+    <string name="but3">3</string>
+    <string name="but4">4</string>
+    <string name="but5">5</string>
+    <string name="but6">6</string>
+    <string name="but7">7</string>
+    <string name="but8">8</string>
+    <string name="but9">9</string>
+    <string name="butA">+</string>
+    <string name="butS">-</string>
+    <string name="butM">*</string>
+    <string name="butD">/</string>
+    <string name="butBack">Back</string>
+    <string name="butEq">=</string>
+    <string name="butH">Advanced-With History</string>
+    <string name="butNoH">Standard-No History</string>
+    <string name="tv2Title">History</string>
 </resources>
